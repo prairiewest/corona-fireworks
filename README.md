@@ -5,6 +5,7 @@ https://hexium.app
 Read about this code in my blog:
 https://prairiewest.net/blog/2019/07/corona-sdk-emitter-fireworks/
 
+![Screenshot](https://raw.githubusercontent.com/prairiewest/corona-fireworks/master/screenshot.png "Screenshot")
 
 Copyright 2019 Todd Trann
 
