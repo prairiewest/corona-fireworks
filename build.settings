@@ -1,0 +1,55 @@
+settings =
+{
+    plugins =
+    {
+
+    },
+
+	orientation =
+ 	{
+		default = "portrait",
+		supported =
+ 		{
+			"portrait",
+			"portraitUpsideDown"
+		}
+	},
+
+	iphone =
+	{
+		xcassets = "Images.xcassets",
+		plist =
+		{
+            UIStatusBarHidden = true,
+            UILaunchStoryboardName = "LaunchScreen",
+			CFBundleLocalizations = {
+                "en"
+            },
+		}
+	},
+
+    android =
+    {
+        usesPermissions =
+        {
+			"com.android.vending.CHECK_LICENSE"
+        }
+    },
+    
+    excludeFiles = {
+        -- Exclude all Android icon files and desktop icons
+        iphone = { "Icon-*pi.png", "Icon*.icns", "Icon*.ico"  },
+
+        -- Exclude iOS retina icons and desktop icons
+        android = { "Icon*@2x.png", "Icon*.icns", "Icon*.ico"  },
+
+        -- Exclude mobile splash screens and icons, win icon
+        osx = { "Default*.png", "Icon*.png", "Icon*.ico" },
+
+        -- Exclude mobile splash screens and icons, osx icon
+        win32 = { "Default*.png", "Icon*.png", "Icon*.icns" }
+    }
+        
+}
+
+
